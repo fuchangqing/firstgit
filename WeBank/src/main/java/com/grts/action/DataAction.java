@@ -24,6 +24,7 @@ public class DataAction {
 		PageInfo<DataBean> page = service.queryPage(dto);
 		model.addAttribute("pageModel", page);
 		model.addAttribute("dto", dto);
+		System.out.println("out是一个静态PrintStream对象");
 		return "/WEB-INF/data/datalist.jsp";
 	}
 	
